@@ -1,6 +1,20 @@
-# Regex Tutorial
+# Regex Tutorial: Matching an Email
 
-Tutorial explaining specific regex in regards to their definitions.
+We will be using the following expression to verify that user input is a valid email address: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
+
+## Summary
+
+To start a line or string we start with the caret symbol ^ as the anchor.
+Next we have a group in parentheses (). 
+Inside the parentheses we have the bracket expression [] that tell us that this is that character classes that needs to be matched.
+Just outside of the bracket expression we have a + quantifier. This signifies that we need to match that one of the patterns of characters one or more times.
+The @ is saying that that specific character is then required.
+We then have anouther group with a bracket expression and a quantifier.
+Following the second group we have a . signifying that that character is required.
+We have one last group with a bracket expression and quantifier, but here the quantifier is in curly brackets {} requiring that we need to match the pattern at least 2-6 times.
+To end the string we have our ending anchor $
+
+Here is a list of definitions of each of the components covered.
 
 ## Table of Contents
 
